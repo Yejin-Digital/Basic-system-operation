@@ -1,6 +1,8 @@
 # Basic-system-operation
 A **cool** repository for my class code.
 
+My name is **Yejin-Jang**
+
   **'aha'** Moments
 >1. In the terminal, what is 'cd' means, and how to find the file location in the terminal using 'ls'
 >2. how to use GitHub

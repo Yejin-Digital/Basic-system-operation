@@ -19,3 +19,6 @@ My name is **Yejin-Jang**
 
  ![image](https://github.com/user-attachments/assets/d68cef4e-e371-4fcd-bf54-eebc0d19d24e)
 
+git statuse - 
+git clone- 
+

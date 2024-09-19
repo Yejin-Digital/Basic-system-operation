@@ -21,4 +21,8 @@ My name is **Yejin-Jang**
 
 git statuse - 
 git clone- 
+git stupid
+
+
+
 

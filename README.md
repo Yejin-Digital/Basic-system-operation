@@ -22,17 +22,17 @@ My name is **Yejin-Jang**
 
  **9/19 Thursday** 
  **Three things** that I learned 
- 1. I learned about the role of github, how it works in the working environment between workers
- 2. I learned how to fine my file, my location, and how to update my new code that I made in Visual Studio Code in the github
- 3. some basic process of javascript 
+>1. I learned about the role of github, how it works in the working environment between workers
+>2. I learned how to fine my file, my location, and how to update my new code that I made in Visual Studio Code in the github
+>3. some basic process of javascript 
 
  **Two things** that I'm confusing
- 1. The interface of the Visual Studio Code is still not familiar with me, everytime I try to open a new file in it, I don't know how to open it.
- 2. Using terminal and changeing something in my computer is a little bit hard for me
+>1. The interface of the Visual Studio Code is still not familiar with me, everytime I try to open a new file in it, I don't know how to open it.
+>2. Using terminal and changeing something in my computer is a little bit hard for me
 
  **word** for how I heel
- **Painful**
+>**Painful**
 
- 
+
 
 

@@ -33,10 +33,10 @@ let horseIntroduction = `${horseName} is my horse's name, and nickname of pretty
 console.log(horseIntroduction);
 
 
-let feeIntroduction = `The monthly fee is usually, ${STABLE_MONTHLY_FEE} per month.`;
+let feeIntroduction = `The monthly fee is usually, $ ${STABLE_MONTHLY_FEE} per month.`;
 console.log(feeIntroduction);
 
-let discoutEvent = `Get 10% discount for three month!, you purchase only $ ${STABLE_MONTHLY_FEE*3*0.9}`;
+let discoutEvent = `Get 10% discount for three month!, you purchase only $ ${STABLE_MONTHLY_FEE*3*0.9}.`;
 console.log(discoutEvent);
 
 

@@ -41,9 +41,9 @@ console.log(discoutEvent);
 
 
 ///Lesson-5 Code///
-let visitingHorseName = "Orange";
+let visitingHorseName = "Lemon";
 
-if (horseName === "Pretty" && visitingHorseName === "Orange" && isHorseInside)
+if (horseName === "Pretty" && visitingHorseName === "Lemon" && isHorseInside)
 { console.log (`${horseName} is inside with his visitor ${visitingHorseName}`);
 } else if (horseName === "Pretty" && visitingHorseName === "Strawberry" && !isHorseInside) {
     console.log (horseName + " is outside with" + visitingHorseName);

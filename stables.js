@@ -1,11 +1,11 @@
 console. log("horses are great!")
 let horseName = "Pretty"; // what ever I can write in this section
 horseName = "Remarkable"; // for strings, prefer double quotes
-horseAge = 5;
+horseAge = 10;
 console.log(horseName);
 console.log(horseAge);
-let isHorseInStable = true;  
-console.log(isHorseInStable);
+let isHorseInside = true;  
+console.log(isHorseInside);
 horseName = "Pretty"
 console.log(horseName);
 
@@ -13,7 +13,7 @@ console.log(horseName);
 
 console.log(typeof 890);
 console.log(typeof "890");
-console.log(typeof horseAge);
+
 
 const STABLE_MONTHLY_FEE = 100;
 
@@ -25,7 +25,7 @@ console.log(STABLE_MONTHLY_FEE / 50);
 
 
 
-////////LESSON $ CODE //////
+////////LESSON 4 CODE //////
 let horseNickname = "swift horse in the world!";
 console.log(horseNickname);
 
@@ -40,11 +40,14 @@ let discoutEvent = `Get 10% discount for three month!, you purchase only $ ${STA
 console.log(discoutEvent);
 
 
+///Lesson-5 Code///
+let visitingHorseName = "Orange";
 
-
-
-
-
-
-
+if (horseName === "Pretty" && visitingHorseName === "Orange" && isHorseInside)
+{ console.log (`${horseName} is inside with his visitor ${visitingHorseName}`);
+} else if (horseName === "Pretty" && visitingHorseName === "Strawberry" && !isHorseInside) {
+    console.log (horseName + " is outside with" + visitingHorseName);
+} else {
+    console.log (horseName + " has no visitor today.");
+}
 

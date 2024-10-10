@@ -115,4 +115,5 @@ console.log(horseMultipleIntro);
 let horseLocation = " Today, the whether is sunny so that " + horseThree[0] + " and " + horseFour[0] + " is outside to walk around" + ", but " + horseFive[0] + " is in the stable because she is sick. ";
 console.log(horseLocation);  
 
+//This is lesson-6//
 

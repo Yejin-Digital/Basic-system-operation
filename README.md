@@ -35,10 +35,21 @@ My name is **Yejin-Jang**
 
 
 > there might have some changes
-> 
 
 
+ **Three things** that I'm confusing
+>1. I'm a little bit confusing the usage of '{}' and '[]'.
+>2. I understand 'if' statement and how it works, but I don't know when it uses.
+>3. I'm a little bit confusing the terms which are used in 'Javascript' because English is my second languge so that sometimes I don't know what the word stans for.
 
+ **3 things** you feel like you have a solid understanding of
+
+>1. Now, I know about the basic system of Javascript how it works.
+>2. If there is some arrors in my code, I can find out by myself.
+>3. Untill week 3, the class was fast for me to abstract all information in class, but now I can easily follow instruction. 
+
+**Analogy**
+![gif](https://gifdb.com/images/high/fantasy-football-360-x-360-gif-90g4a4o0ie2f2k3j.webp)
 
 
 

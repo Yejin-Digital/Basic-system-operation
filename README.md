@@ -51,5 +51,5 @@ My name is **Yejin-Jang**
 **Analogy**
 ![gif](https://gifdb.com/images/high/fantasy-football-360-x-360-gif-90g4a4o0ie2f2k3j.webp)
 
-// This is lesson-6//
+
 

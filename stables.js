@@ -1,3 +1,5 @@
+///lesson-2///
+
 console.log("horses are great!")
 let horseName = "Pretty"; // what ever I can write in this section
 horseName = "Remarkable"; // for strings, prefer double quotes
@@ -9,7 +11,7 @@ console.log(isHorseInside);
 horseName = "Pretty"
 console.log(horseName);
 
-
+///lesson-3///
 
 console.log(typeof 890);
 console.log(typeof "890");
@@ -114,6 +116,10 @@ console.log(horseMultipleIntro);
 
 let horseLocation = " Today, the whether is sunny so that " + horseThree[0] + " and " + horseFour[0] + " is outside to walk around" + ", but " + horseFive[0] + " is in the stable because she is sick. ";
 console.log(horseLocation);  
+
+
+/// Lesson-7 Code///
+
 
 
 

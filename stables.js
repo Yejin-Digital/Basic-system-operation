@@ -120,6 +120,44 @@ console.log(horseLocation);
 
 /// Lesson-7 Code///
 
+function logHorseNicknames(horse, friend) {
+    const string = `${horseNames[horse]}'s nickname is ${horseNicknames[horse]}, and they have a friend named ${horseNames[friend]}, who is 
+    nicknamed ${horseNicknames[friend]}!`;
+    console.log(string);
+}
+
+logHorseNicknames(1, 2);
+//logHorseNicknames(0);
+//logHorseNicknames(2);
+
+function payMe(rent = STABLE_MONTHLY_FEE, demand) {
+    console.log(`Pay me $${rent}! ${demand}`)
+}
+payMe(200, "right now, or else");
+payMe(undefined, "Preety pleas");
+
+
+
+function tidyLocation(horse) {
+    if(areHorsesInside[horse]) {
+        return horseNames[horse] + " is inside.";
+    }
+
+    return horseNames[horse] + " is outside";
+}
+
+let prettyLocation = tidyLocation(0);
+let strawberryLocation = tidyLocation(1);
+let orangeLocation = tidyLocation(2);
+
+console.log(prettyLocation);
+console.log(strawberryLocation);
+console.log(orangeLocation);
+
+
+
+
+
 
 
 

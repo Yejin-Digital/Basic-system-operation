@@ -126,30 +126,44 @@ function changeLocationHorse(horse,age) {
         console.log(`${horse.name} is already outside!`)
     }
 }
-//To check my code is working or not
-changeLocationHorse(horses[0], horses.age);
 
-//This is the feed time function with conditional state
-function feedHorses(horse, age) {
-    if (2>= age > 6) {
-        console.log(`It's time to feed! ${horse.name} had a ${horse.favoriteTreat} which is favorite treat. `)
-    } else {
-        console.log(`${horse.name} should come back to the stalls, and have a happy ${horse.favoriteTreat} time!`)
+//This is the loop for bring the horses back if they are outside 
+function changeLocationHorse() {
+    for (let i = 0; i < horses.length; i++) {
+        if(horses[i].isHorseInside === true) {
+            horses[i].isHorseInside = false;
+            console.log("All the horses are outside")
+        }
     }
 }
-//To check my code is working or not
-feedHorses(horses[1], horses.age);
+    
 
-//Bed time function to call the horses which are in outside
-function bedtime(horse, age) {
-    if (4<= age <=5) {
-        console.log(`It's time to go bed! ${horse.name} should come back to the stall`)
-    };
-    console.log(`All horses is inside for the sleep`)
+//This is the feed time function with conditional state
+function feedHorses() {
+    for (let i = 0; i < horses.length; i++) {
+        if(horses[i].isHorseInside === true) {
+            horses[i].isHorseInside = true;
+            console.log("It's time to feed!");
+        } else {
+            horses[i].isHorseInside = false;
+            console.log("Come back inside, It's time to feed!")
+        }
+    }
 }
 
-//To check my code is working or not
-bedtime(horses[2], horses.age);
+//Bed time function to call the horses which are in outside
+function bedtime() {
+    for (let i=0; i < horses.length; i++) {
+        if(horses[i].isHorseInside === true) {
+            horses[i].isHorseInside = true;
+            console.log("It's time to go to bed!, Come back to the stall.");
+        } else {
+            horses[i].isHorseInside = false;
+            console.log("All horses is inside for the sleep.")
+        }
+    }
+}
+
 
 
 

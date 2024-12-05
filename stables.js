@@ -1,161 +1,155 @@
-///lesson-2///
+//
+//
+//                         //       //
+//                      ===          ===//
+//                       ==============////
+//                      =============///////
+//                  ======❤️❤️❤️===========//////
+//                 ====================//////  
+//                   ==================//////
+//                     ================//////  
+//                          ===========//////                           //////
+//                          ===========//////                         /////////         ❤️❤️❤️❤️❤️❤️❤️
+//                          ===========/////////////                 /////////////    /
+//                          =======================================//    //////    //
+//                          =======================================//     ////   ///
+//                           =====================================         ////////
+//                           =====================================          //////
+//                           =====================================            ///
+//                           ==========                 ==========
+//                            ========                    =======
+//                              ====                        ====
+//                                =                           =                           [] [] [] [] [] [] [] [] [] [] [] 
+//
+//
+//
+//
+//
 
-console.log("horses are great!")
-let horseName = "Pretty"; // what ever I can write in this section
-horseName = "Remarkable"; // for strings, prefer double quotes
-horseAge = 10;
-console.log(horseName);
-console.log(horseAge);
-let isHorseInside = true;  
-console.log(isHorseInside);
-horseName = "Pretty"
-console.log(horseName);
-
-///lesson-3///
-
-console.log(typeof 890);
-console.log(typeof "890");
-
-
-const STABLE_MONTHLY_FEE = 100;
-
-
-
-console.log(STABLE_MONTHLY_FEE + STABLE_MONTHLY_FEE);
-console.log(STABLE_MONTHLY_FEE * 123);
-console.log(STABLE_MONTHLY_FEE / 50);
-
-
-
-////////LESSON 4 CODE //////
-let horseNickname = "swift horse in the world!";
-console.log(horseNickname);
-
-let horseIntroduction = `${horseName} is my horse's name, and nickname of pretty is ${horseNickname}`;
-console.log(horseIntroduction);
+//Horse variable to store my horses
+let horses = [];
 
 
-let feeIntroduction = `The monthly fee is usually, $ ${STABLE_MONTHLY_FEE} per month.`;
-console.log(feeIntroduction);
+//This is my horse properties using a constructor to add varioubles
+function Horses(name, nickname, favoriteTreat, age, monthlyRentFee, color, birthPlace, isHorseInside, hungerState) {
+    //the variables about horses (name, nickname, treat, age, montly rent fee, color, birthplace, inside, hungry)
+    this.name = name;
+    this.nickname = nickname;
+    this.favoriteTreat = favoriteTreat;
+    this.age = age;
+    this.monthlyRentFee = monthlyRentFee;
+    //color and birthplace is 2 more properties
+    this.color = color;
+    this.birthPlace = birthPlace;
+    this.isHorseInside = isHorseInside; //true= inside false=outside
+    //boolen to check the horses are hungry or not
+    this.hungerState = hungerState;
+    // Welcome, introduction, late rent fee notification, news messages using function, this is method in the constructor
+    this.welcomeMessage = function () {
+        console.log(`Welcome to the worderful horse world!`)
+    };
+    this.horseIntroduction = function (horses) {
+        console.log(`Welcom to horse world. My name is ${this.name}. I'm ${this.age} years old, and I like to eat ${this.favoriteTreat}`);
+    };
+    //This is method(fucntion) to log out the late rent fee
+    this.lateRentFee = function () {
+        console.log(`There is a late payment fee, and it costs 10% of montly rent fee. So, for the ${this.name}, you should pay $${this.monthlyRentFee*0.1} more.So, its total cost is ${this.monthlyRentFee}`)
+    };
+    //This new method sentence
+    this.newsMessage = function () {
+        console.log(`In rainy day, we are not opened. Sorry about that.`)
+    };
+}
 
-let discoutEvent = `Get 10% discount for three month!, you purchase only $ ${STABLE_MONTHLY_FEE*3*0.9}.`;
-console.log(discoutEvent);
+//This is my horses with variables
+const horseOne = new Horses("Pink", "Pong", "Tangerine", 5, 500, "Brown", "Jeju Island", true, false);
+const horseTwo = new Horses("Orange", "Ping", "Carrot", 7, 200, "Gray", "France", false, true);
+const horseThree = new Horses("Lemon", "King", "Apple", 2, 300, "White", "Austrailia", false, true);
+
+//add my horses into the horses array
+horses.push(horseOne)
+horses.push(horseTwo)
+horses.push(horseThree)
 
 
-///Lesson-5 Code///
-let visitingHorseName = "Lemon";
+horseOne.lateRentFee();
 
-if (horseName === "Pretty" && visitingHorseName === "Lemon" && isHorseInside)
-{ console.log (`${horseName} is inside with his visitor ${visitingHorseName}`);
-} else if (horseName === "Pretty" && visitingHorseName === "Strawberry" && !isHorseInside) {
-    console.log (horseName + " is outside with" + visitingHorseName);
+// adding a new horse in my norses variable
+const newHorse = new Horses("Penny", "Coco", "beans", 4, 600, "speckled pattern", "London", true, false);
+horses.push(newHorse)
+
+console.log(horses);
+
+
+//available stalls conditional coding
+let totalStalls = 8;
+
+if (totalStalls < 2) {
+    console.log("We need to build more stalls");
 } else {
-    console.log (horseName + " has no visitor today.");
+    console.log(`We have ${totalStalls-horses.length} available!`);
 }
 
-///Lesson-6 Code///
-
-//Horse = ["name", gae, isInside, "nickName"]//
-let horseOne = [horseName, horseAge, isHorseInside, horseNickname];
-let horseTwo = ["Strawberry", 2, false, "Pie"];
-
-let horseNames = [horseName, "Strawberry", "Orange"];
-let horseAges = [horseAge, 2, 10];
-let horseNicknames = [horseNickname, "pie", "Arthur"];
-let areHorsesInside = [isHorseInside, false, true];
-
-console.log(horseOne);
-console.log(horseTwo);
-
-//length means that how many items are in the arrays//
-console.log(["Strawberry", 2, false, "Pie"].length);
-
-horseOne.push("blue");
-console.log(horseOne);
-
-console.log(horseOne[0] + "'s nickname is " + horseOne[3]);
-console.log(`${horseTwo[0]}'s nickname is ${horseTwo[3]}`);
-
-console.log(horseOne[1] + horseTwo[1]);
-
-if (horseOne[1] === 3) {
-    console.log(horseOne[0] + " is 3");
-} else {
-    console.log(horseOne[0] + " is NOT 3");
-}
-
-console.log(horseOne[0] + " and " + horseTwo[0] + " are staying at the stables");
-
-let horseIntro = `There are ${horseNames.length} horses staying at my stables: ${horseNames[0]}, ${horseNames[1]}, ${horseNames[2]}!`;
-console.log(horseIntro);
-
-let differentHorseIntro = " There are " +  horseNames.length + " horses staying at my stables: " + horseNames[0] + " , " + horseNames[1] + " , " + horseNames[2] + "!";
-console.log(differentHorseIntro);
-
-///Lab - branch lesson-6 (done by Sunday)
-// Stables.js
-// - Output an introduction to your horses
-// - Output whether your horses inside or outside AT LEAST 3 HORSES!!!
-//Readme
-// 3 confusing things
-// 3 things you feel like you have a solid understanding of
-// Analogies that you use to think about things (gif) 
-
-
-let horseThree = ["Ubin", 10, "Pineapple"];
-let horseFour = ["Jisoo", 13, "Cherry"];
-let horseFive = ["Seuyoung", 5, "Apple"];
-
-console.log(horseThree);
-console.log(horseFour);
-console.log(horseFive);
-
-let horseMultipleIntro = " There are " +  horseThree.length + " horses in my garden, " + " and " + " their names are " + horseThree[0] + ", " + horseFour[0] + ", " + horseFive[0] + "!"
-                          + " They have nicknames which are " + horseThree[2] + ", " + horseFour[2] + ", " + "and " + horseFive[2] + ".";
-console.log(horseMultipleIntro);
-
-let horseLocation = " Today, the whether is sunny so that " + horseThree[0] + " and " + horseFour[0] + " is outside to walk around" + ", but " + horseFive[0] + " is in the stable because she is sick. ";
-console.log(horseLocation);  
-
-
-/// Lesson-7 Code///
-
-function logHorseNicknames(horse, friend) {
-    const string = `${horseNames[horse]}'s nickname is ${horseNicknames[horse]}, and they have a friend named ${horseNames[friend]}, who is 
-    nicknamed ${horseNicknames[friend]}!`;
-    console.log(string);
-}
-
-logHorseNicknames(1, 2);
-//logHorseNicknames(0);
-//logHorseNicknames(2);
-
-function payMe(rent = STABLE_MONTHLY_FEE, demand) {
-    console.log(`Pay me $${rent}! ${demand}`)
-}
-payMe(200, "right now, or else");
-payMe(undefined, "Preety pleas");
-
-
-
-function tidyLocation(horse) {
-    if(areHorsesInside[horse]) {
-        return horseNames[horse] + " is inside.";
+//loop to log out they like the treat or not
+let treat = "beans"
+for (let horse of horses) {
+    if (horse.favoriteTreat === treat) {
+        console.log(`${horse.name} loves ${treat}!`);
+        break;
+    } else {
+        console.log(`${horse.name} doesn't like ${treat}.`);
     }
-
-    return horseNames[horse] + " is outside";
 }
 
-let prettyLocation = tidyLocation(0);
-let strawberryLocation = tidyLocation(1);
-let orangeLocation = tidyLocation(2);
+//nickname output to use return it not log out
+function outNickname(horses) {
+    return horses.nickname;
+}
+//This is log out to check the above code is working or not
+console.log(outNickname(horses[0]));
 
-console.log(prettyLocation);
-console.log(strawberryLocation);
-console.log(orangeLocation);
+//this is conditional to output my unique properties(birthPlace)
+function birthPlace(horses) {
+    if (horses.birthPlace === "France") {
+        console.log(`${horses.name} is from France`)
+    }
+}
+
+birthPlace(horses[1]);
 
 
+//I made a function to set the location of the horses using conditional 
+function changeLocationHorse(horse,age) {
+    if (2>= age > 6) {
+        console.log(`${horse.name} has been moved outside.`);
+    } else {
+        console.log(`${horse.name} is already outside!`)
+    }
+}
+//To check my code is working or not
+changeLocationHorse(horses[0], horses.age);
 
+//This is the feed time function with conditional state
+function feedHorses(horse, age) {
+    if (2>= age > 6) {
+        console.log(`It's time to feed! ${horse.name} had a ${horse.favoriteTreat} which is favorite treat. `)
+    } else {
+        console.log(`${horse.name} should come back to the stalls, and have a happy ${horse.favoriteTreat} time!`)
+    }
+}
+//To check my code is working or not
+feedHorses(horses[1], horses.age);
+
+//Bed time function to call the horses which are in outside
+function bedtime(horse, age) {
+    if (4<= age <=5) {
+        console.log(`It's time to go bed! ${horse.name} should come back to the stall`)
+    };
+    console.log(`All horses is inside for the sleep`)
+}
+
+//To check my code is working or not
+bedtime(horses[2], horses.age);
 
 
 

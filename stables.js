@@ -48,7 +48,7 @@ function Horses(name, nickname, favoriteTreat, age, monthlyRentFee, color, birth
     this.welcomeMessage = function () {
         console.log(`Welcome to the worderful horse world!`)
     };
-    this.horseIntroduction = function (horses) {
+    this.horseIntroduction = function () {
         console.log(`Welcom to horse world. My name is ${this.name}. I'm ${this.age} years old, and I like to eat ${this.favoriteTreat}`);
     };
     //This is method(fucntion) to log out the late rent fee
@@ -71,7 +71,7 @@ horses.push(horseOne)
 horses.push(horseTwo)
 horses.push(horseThree)
 
-
+//This is log out the late rent fee to check that my code is working or not
 horseOne.lateRentFee();
 
 // adding a new horse in my norses variable
